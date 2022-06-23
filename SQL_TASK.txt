@@ -1,0 +1,50 @@
+create table Categories (
+	"Id" int not null identity,
+	"Name" varchar(30) not null,
+
+	primary key ("id")
+)
+
+create table Products (
+	"Id" int not null identity,
+	"Name" varchar(30) not null,
+
+	primary key ("id")
+)
+
+create table CategoriesToProducts (
+	"CategoryId" int not null,
+	"ProductId" int not null,
+
+	constraint PK_CategoryId FOREIGN KEY (CategoryId) references Categories (Id),
+	constraint PK_ProductId FOREIGN KEY (ProductId) references Products (Id),
+ )
+
+use mindbox;
+
+insert into Categories (Categories.Name) values
+('Electroics'),
+('Food'),
+('Furniture')
+
+insert into Products (Name) values
+('Lamp'),
+('Shelve'),
+('Phone'),
+('Milk'),
+('Rope')
+
+insert into CategoriesToProducts (CategoryId, ProductId) values
+(9,4),
+(8,1),
+(10,1),
+(10,2),
+(8,3),
+(9,4)
+
+select p.Name, c.Name
+from Products as p
+left join CategoriesToProducts cp
+on p.Id = cp.ProductId
+left join Categories as c
+on cp.CategoryId = c.Id
