@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareCalculator", "SquareCalculator\SquareCalculator.csproj", "{302CCA7C-A070-4DA3-9284-2CE2F71296D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareCalculator.Tests", "SquareCalculator.Tests\SquareCalculator.Tests.csproj", "{0FBA931E-2F42-452F-A2CF-0204AAF13AB2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{302CCA7C-A070-4DA3-9284-2CE2F71296D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{302CCA7C-A070-4DA3-9284-2CE2F71296D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{302CCA7C-A070-4DA3-9284-2CE2F71296D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{302CCA7C-A070-4DA3-9284-2CE2F71296D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FBA931E-2F42-452F-A2CF-0204AAF13AB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FBA931E-2F42-452F-A2CF-0204AAF13AB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FBA931E-2F42-452F-A2CF-0204AAF13AB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FBA931E-2F42-452F-A2CF-0204AAF13AB2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
